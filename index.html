@@ -3,47 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Blog</title>
+    <title>Document</title>
     <link rel="stylesheet" href="mystyle.css">
 </head>
-<body>
-    <header>
-        <h1>Coffee Blog</h1>
+<body> 
+    <header class="site-header">
+        <div class="menu-bar">
+            <h1> CoffeeBlog</h1>
+
+                <nav class="menu">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="courses.html">Courses</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
         <h2>Coffee Blog with tips and courses</h2>
-        <p>Learn from the experts with the best recipes and tips</p>
+        <p >Learn from the experts with the best recipes and tips</p>
     </header>
-    <main class="container">
-        <h2>Our blog</h2>
 
-        <div>
-            <img src="img/blog1.jpg" alt="Coffee bean type">
-            <h3>Coffee bean type</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-               Eum quidem dolor sed tenetur quis? Nesciunt, sunt. 
-               Repellendus illo magnam quibusdam omnis eaque. 
-               Numquam sunt quae sit nesciunt, reprehenderit in voluptate aperiam?</p>
-               <a class="btn-more" href="#">Read more</a>
-        </div>
-    
-        <div>
-            <img src="img/blog2.jpg" alt="Delicious Coffee Recipes">
-            <h3>Delicious Coffee Recipes</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-               Eum quidem dolor sed tenetur quis? Nesciunt, sunt. 
-               Repellendus illo magnam quibusdam omnis eaque. 
-               Numquam sunt quae sit nesciunt, reprehenderit in voluptate aperiam?</p>
-               <a class="btn-more" href="#">Read more</a>
-        </div>
-
-        <div>
-            <img src="img/blog3.jpg" alt="Coffee benefits">
-            <h3>Coffee benefits</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-               Eum quidem dolor sed tenetur quis? Nesciunt, sunt. 
-               Repellendus illo magnam quibusdam omnis eaque. 
-               Numquam sunt quae sit nesciunt, reprehenderit in voluptate aperiam?</p>
-               <a class="btn-more" href="#">Read more</a>
-        </div>
+    <main class="container main-flex">
+        <section class="blog-container">
+            <h2>Our blog</h2>
+            <div class="bottom-line"><!-- blog1 -->
+                <img src="./img/blog1.jpg" alt="">
+                <h3>Coffee bean type</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum quidem dolor sed tenetur quis? Nesciunt, sunt. Repellendus illo magnam quibusdam omnis eaque. Numquam sunt quae sit nesciunt, reprehenderit voluptate aperiam?</p>
+                <a class="btn btn-more" href="#">Read more</a>   
+            </div>            
+            <div class="bottom-line"><!-- blog2 -->
+                <img src="./img/blog2.jpg" alt="">
+                <h3>3 Delicious Coffee Recipes</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo consequatur sint neque eius at recusandae repudiandae aliquid inventore similique, a quaerat veritatis in quasi quis velit, labore ipsum officia voluptate!</p>
+                <a class="btn btn-more" href="#">Read more</a>
+            </div>           
+            <div class="bottom-line"><!-- blog3 -->
+                <img src="./img/blog3.jpg" alt="">
+                <h3>Coffee Benefits</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dignissimos distinctio obcaecati eos tempore dolorum sapiente quisquam, quae aut aliquid quos, neque culpa asperiores error sequi provident ex, consequuntur reiciendis!</p>
+                <a class="btn btn-more" href="#">Read more</a>
+            </div>
+        </section><!-- .blog-container -->
+        
+        <section class="courses-container">
+            <h2>Our courses and workshops</h2>
+            <div class="bottom-line">
+                <h3>Coffee Extraction techniques</h3>
+                <p>Price:Free</p>
+                <p>Seats: 20</p>
+                <a class="btn btn-info" href="#">More information</a>
+            </div>
+            <div class="bottom-line">
+                <h3>4 Coffee Recipes for begginers</h3>
+                <p>Price:Free</p>
+                <p>Seats: 20</p>
+                <a class="btn btn-info" href="#">More information</a>
+            </div>
+        </section><!-- .courses-container -->
     </main>
+    <footer class="site-footer">
+        <div class="menu-bar">
+            <h1> CoffeeBlog</h1>
+
+            <nav class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="courses.html">Courses</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </footer>
 </body>
 </html>

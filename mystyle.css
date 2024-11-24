@@ -1,53 +1,82 @@
 /*global*/
-body{
-    font-family: Arial;
+html,body{
+    margin:0;
+    padding:0;
 }
-
+body{
+    font-family: arial;
+}
 img{
     max-width: 100%;
 }
-
 p{
     line-height: 2;
 }
-/*utilities*/
+
+/*utilities*/ 
 .container{
-    width: 80%;
-    margin: auto;
+    width:80%;
+    padding:3px;
+    margin-left: auto;
     margin-right: auto;
 }
-
-.btn-more{
+.btn{
     display: inline-block;
-    background-color: black;
     color:white;
-    padding: 10px;
-    margin-top: 100px;
-    margin-bottom: 28px;
+    padding:10px;
+    margin-top:10px;
+    margin-bottom: 20px;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
     font-size: 12px;
 }
-
-
+.btn-more{
+    background-color: black;
+}
+.btn-info{
+    background-color: sienna;
+}
+.bottom-line{
+    border-bottom:1px solid lightgray;
+    margin-bottom: 20px;
+}
 /*header*/
-
-header{
-    background-image: url(img/banner.jpg);
+.menu-bar{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;/*horizontally*/
+    align-items: center;/*vertical*/
+}
+.site-header{
+    background-image: url(./img/banner.jpg);
     background-position: center center;
     background-size: cover;
-    color: white;
+    color:white;
     height: 350px;
     text-align: center;
 }
+.menu a{
+    color:white;
+    text-decoration: none;
+    margin-right: 20px;
+}
 
-/*margin*/
-
-
-
-
-
+/*main*/ 
+.main-flex{
+    display: flex;
+}
+.blog-container{
+    width: 60%;
+    margin-right: 20px;
+}
+.courses-container{
+    width:40%;
+}
 /*blog*/
 
-
+/*footer*/ 
+.site-footer{
+    background-color: black;
+    color:white;
+}
